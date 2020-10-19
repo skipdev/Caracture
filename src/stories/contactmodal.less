@@ -1,0 +1,24 @@
+@import "assets/variables.less";
+@import "assets/bourbonFont.css";
+
+.contact-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  &__right {
+    z-index: 2;
+    font-family: BourbonGrotesque-Regular, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: @blue;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+  }
+}

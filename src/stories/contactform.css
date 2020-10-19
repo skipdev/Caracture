@@ -1,0 +1,18 @@
+.contact-form {
+  width: 80%;
+  background-color: white;
+  z-index: 2;
+}
+.contact-form .form-column:first-child {
+  width: 40%;
+}
+.contact-form .form-column:last-child {
+  width: 60%;
+}
+.contact-form .form-group {
+  margin: 1em;
+}
+.contact-form #form--registration {
+  margin-top: 2em;
+}
+/*# sourceMappingURL=contactform.css.map */

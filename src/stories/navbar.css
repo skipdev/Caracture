@@ -16,4 +16,7 @@
   align-items: center;
   height: 100%;
 }
+.navbar__buttons a:hover {
+  color: white;
+}
 /*# sourceMappingURL=navbar.css.map */
