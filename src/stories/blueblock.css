@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Balsamiq Sans Regular'), local('BalsamiqSans-Regular'), url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
+}
+.BlueBlock {
+  background-color: #50E0FF;
+  width: 110%;
+  position: fixed;
+  height: max-content;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  z-index: -1;
+  left: -1em;
+}
+/*# sourceMappingURL=blueblock.css.map */

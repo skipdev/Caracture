@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Balsamiq Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Balsamiq Sans Regular'), local('BalsamiqSans-Regular'), url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin-left: 5%;
+}
+footer navbar {
+  margin-top: 1em;
+}
+/*# sourceMappingURL=footer.css.map */
