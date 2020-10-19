@@ -5,13 +5,11 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ type, label, active, ...props }) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
+      className={['storybook-button', `storybook-button--${type}`, `storybook-button--${active && 'active'}`].join(' ')}
       {...props}
     >
       {label}
@@ -23,19 +21,12 @@ Button.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * How large should the button be?
-   */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  type: PropTypes.oneOf(['primary', 'secondary', 'plain']),
   /**
    * Button contents
    */
   label: PropTypes.string.isRequired,
+  active: PropTypes.bool,
   /**
    * Optional click handler
    */
@@ -43,8 +34,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  size: 'medium',
+  type: 'primary',
+  active: false,
+  label: 'hi',
   onClick: undefined,
 };

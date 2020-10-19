@@ -1,23 +1,26 @@
-@font-face {
-  font-family: 'Balsamiq Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Balsamiq Sans Regular'), local('BalsamiqSans-Regular'), url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
-}
 .homepage {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
 }
-.homepage__navbar {
-  align-self: flex-end;
+.homepage > * {
+  margin: 1em;
 }
-.homepage__intro {
-  margin-top: 5%;
+.homepage__carousel {
+  z-index: -1;
+  position: absolute;
 }
-.homepage__mlb {
-  margin-top: 8%;
-  align-self: center;
+.homepage__carousel .carousel-caption {
+  text-align: left;
+  width: 40%;
+  bottom: 4em;
+  left: 6em;
+}
+.homepage__carousel .carousel-caption h3 {
+  font-size: 2.5em;
+}
+.homepage__carousel .carousel-indicators {
+  left: unset;
+  margin-right: 3em;
 }
 /*# sourceMappingURL=homepage.css.map */

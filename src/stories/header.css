@@ -1,16 +1,19 @@
-@font-face {
-  font-family: 'Balsamiq Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Balsamiq Sans Regular'), local('BalsamiqSans-Regular'), url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
-}
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
+  width: 102%;
   background-color: rgba(0, 0, 0, 0.7);
+  height: 4em;
+  align-items: center;
+}
+header .header__logo--wrapper {
+  position: absolute;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+header .header__navbar--wrapper {
+  float: right;
+  height: 100%;
 }
 /*# sourceMappingURL=header.css.map */

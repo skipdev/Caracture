@@ -10,11 +10,12 @@ export const Navbar = ({ label, ...props }) => {
           {...props}
       >
           {/*TODO make an array of buttons as the prop, loop through here */}
-          <Button label={'About me'} type={'plain'}/>
-          <Button label={'Timeline'} type={'plain'}/>
-          <Button label={'Work'} type={'plain'}/>
-          <Button label={'Contact me'} type={'plain'}/>
-          <Button label={'Download CV'} type={'primary'}/>
+          <div className={'navbar__buttons'}>
+              <Button label={'Home'} type={'plain'} active={true}/>
+              <Button label={'About'} type={'plain'}/>
+              <Button label={'Services'} type={'plain'}/>
+              <Button label={'Contact'} type={'plain'}/>
+          </div>
       </navbar>
   );
 };

@@ -1,1 +1,1 @@
-{"version":3,"sources":["https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap","navbar.less"],"names":[],"mappings":"AAAA;EACE,aAAa,eAAb;EACA,kBAAA;EACA,gBAAA;EACA,kBAAA;EACA,KAAK,MAAM,0BAA0B,MAAM,0GAA0G,OAAO,WAA5J;;ACHF;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;;AACA,OAAE;EACA,YAAA","file":"navbar.css"}
+{"version":3,"sources":["navbar.less"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;;AACA,OAAC;EACC,aAAA;EACA,mBAAA;EACA,YAAA;EACA,6BAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA","file":"navbar.css"}

@@ -1,13 +1,12 @@
 @font-face {
-  font-family: 'Balsamiq Sans';
+  font-family: 'BourbonGrotesque-Regular';
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot');
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.svg#BourbonGrotesque-Regular') format('svg'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.ttf') format('truetype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff') format('woff'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Balsamiq Sans Regular'), local('BalsamiqSans-Regular'), url(https://fonts.gstatic.com/s/balsamiqsans/v2/P5sEzZiAbNrN8SB3lQQX7Pnc8dk.ttf) format('truetype');
 }
-.button {
-  font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+.storybook-button {
+  font-family: BourbonGrotesque-Regular, sans-serif;
   letter-spacing: 1px;
   border: 0;
   border-radius: 5px;
@@ -17,20 +16,24 @@
   height: 2.5em;
   max-width: 10em;
   justify-content: center;
+  align-items: center;
 }
-.button--primary {
+.storybook-button--primary {
   color: white;
   background-color: #50E0FF;
 }
-.button--secondary {
+.storybook-button--secondary {
   color: white;
   background-color: #9f9f9f;
 }
-.button--plain {
+.storybook-button--plain {
   color: #9f9f9f;
   background-color: transparent;
 }
-.button__label {
+.storybook-button__label {
   align-self: center;
+}
+.storybook-button--active {
+  color: white;
 }
 /*# sourceMappingURL=button.css.map */

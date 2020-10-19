@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'BourbonGrotesque-Regular';
+  src: url('BourbonGrotesque-Regular.eot');
+  src: url('BourbonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+       url('BourbonGrotesque-Regular.svg#BourbonGrotesque-Regular') format('svg'),
+       url('BourbonGrotesque-Regular.ttf') format('truetype'),
+       url('BourbonGrotesque-Regular.woff') format('woff'),
+       url('BourbonGrotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,8 +1,8 @@
 @import "assets/variables.less";
+@import "assets/bourbonFont.less";
 
-.button {
-  font-family: 'Balsamiq Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
+.storybook-button {
+  font-family: BourbonGrotesque-Regular, sans-serif;
   letter-spacing: 1px;
   border: 0;
   border-radius: 5px;
@@ -12,6 +12,7 @@
   height: 2.5em;
   max-width: 10em;
   justify-content: center;
+  align-items: center;
   &--primary {
     color: white;
     background-color: @blue;
@@ -26,5 +27,8 @@
   }
   &__label {
     align-self: center;
+  }
+  &--active {
+    color: white;
   }
 }
