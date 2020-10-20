@@ -6,6 +6,7 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
   height: 4em;
   align-items: center;
+  z-index: 12;
 }
 header .header__logo--wrapper {
   position: absolute;

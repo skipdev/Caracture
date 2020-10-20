@@ -2,6 +2,7 @@ import React from 'react';
 import './contact.css';
 import {Header} from "./Header";
 import {ContactModal} from "./ContactModal";
+import car from '../car.png';
 
 export const Contact = () => {
   return (
@@ -11,9 +12,12 @@ export const Contact = () => {
       <div className={'contact__header'}>
         <Header/>
       </div>
-      <div className={'whiteBG'}/>
       <div className={'contact__form'}>
-        <span className={'contact__title'}>Get In Touch</span>
+        <div className={'whiteBG'}/>
+        <div className={'contact__top'}>
+          <span className={'contact__title'}>Get In Touch</span>
+          <img className={'contact__img'} src={car} alt={'range rover car'}/>
+        </div>
         <div className={'contact-modal__wrapper'}>
           <ContactModal/>
         </div>

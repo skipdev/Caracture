@@ -6,6 +6,7 @@
   background-color: white;
   width: 100%;
   margin: 0 auto;
+  border-radius: 4px;
 }
 .contact-modal__right {
   z-index: 2;
@@ -19,5 +20,6 @@
   justify-content: center;
   align-items: center;
   margin-left: 1em;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=contactmodal.css.map */

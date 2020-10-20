@@ -3,6 +3,29 @@
   background-color: #282c34;
   height: 100vh;
 }
+.contact__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact__title {
+  font-family: BourbonGrotesque-Regular, sans-serif;
+  font-size: 4em;
+  z-index: 3;
+  align-self: flex-start;
+  margin: 0 0.2em;
+  margin-bottom: 1em;
+  color: #1D3D85;
+}
+.contact__img {
+  z-index: 3;
+  height: 18em;
+  width: 30em;
+  position: absolute;
+  right: 10%;
+}
 .contact__form {
   display: flex;
   flex-direction: column;
@@ -13,23 +36,19 @@
   padding: 2em;
   margin-top: 15vh;
   background-color: white;
+  border-radius: 8px;
 }
 .contact-modal__wrapper {
   z-index: 2;
   width: 100%;
 }
-.contact__title {
-  font-family: BourbonGrotesque-Regular, sans-serif;
-  font-size: 4em;
-  z-index: 3;
-  align-self: flex-start;
-  margin: 0.5em 0.2em;
-}
 .contact .whiteBG {
   background-color: white;
   content: '.';
   width: 100vw;
-  height: 60vh;
+  height: 45vh;
   position: absolute;
+  z-index: 1;
+  bottom: 0;
 }
 /*# sourceMappingURL=contact.css.map */
