@@ -1,22 +1,23 @@
 @import "assets/variables.less";
+@import "assets/bourbonFont";
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.banner {
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 4em;
+  height: 70vh;
   align-items: center;
-  z-index: 12;
-  & .header__logo--wrapper {
-    position: absolute;
-    margin-left: 2em;
-    margin-top: 1em;
-    z-index: 100;
-  }
-  & .header__navbar--wrapper {
-    float: right;
+  position: relative;
+  top: -10em;
+  &__img, &__img img {
+    width: 100%;
     height: 100%;
+  }
+  &__label {
+    font-family: BourbonGrotesque-Regular, sans-serif;
+    margin-top: -1.5em;
+    z-index: 100;
+    right: .25em;
+    color: white;
+    font-size: 8em;
+    position: absolute;
   }
 }

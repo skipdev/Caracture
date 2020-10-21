@@ -3,7 +3,7 @@ import './banner.css';
 import PropTypes from "prop-types";
 
 export const Banner = ({ imgSrc, imgAlt, label }) => (
-    <div>
+    <div className={'banner'}>
         <div className={'banner__img'}><img src={imgSrc} alt={imgAlt}/></div>
         <span className={'banner__label'}>{label}</span>
     </div>

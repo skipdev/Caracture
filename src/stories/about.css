@@ -1,40 +1,35 @@
-.homepage {
+.about {
+  background-color: #282c34;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.about__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50vh;
+  margin-top: -13vh;
+}
+.about__row > * {
+  padding: 2em;
+}
+.about__column {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-  width: 100vw;
 }
-.homepage__carousel {
-  z-index: -1;
-  position: absolute;
+.about__text {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+.about__text-wrapper {
+  padding-top: 3em;
+}
+.about__video {
   width: 100%;
-  overflow-x: hidden;
+  height: 100%;
 }
-.homepage__carousel .carousel-caption {
-  text-align: left;
-  width: 40%;
-  bottom: 4em;
-  left: 6em;
-}
-.homepage__carousel .carousel-caption h3 {
-  font-size: 2.5em;
-}
-.homepage__carousel .carousel-caption Button {
-  margin-top: 1em;
-  font-size: 1.4em;
-  padding: 0 0.5em;
-  width: 10em;
-}
-.homepage__carousel .carousel-indicators {
-  left: unset;
-  margin-right: 3em;
-}
-.homepage__carousel img {
-  width: 100vw !important;
-  height: 100vh;
-}
-.homepage__carousel .carousel.slide {
-  width: 100vw;
-  overflow-x: hidden;
+.about__video-wrapper {
+  width: 70%;
 }
 /*# sourceMappingURL=about.css.map */

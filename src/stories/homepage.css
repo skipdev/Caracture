@@ -4,6 +4,9 @@
   overflow-x: hidden;
   width: 100vw;
 }
+.homepage__header header {
+  position: unset;
+}
 .homepage__carousel {
   z-index: -1;
   position: absolute;
