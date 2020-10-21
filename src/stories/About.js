@@ -1,6 +1,8 @@
 import React from 'react';
 import './about.css';
 import {Header} from "./Header";
+import {Banner} from "./Banner";
+import slide2 from '../slide2.jpg';
 
 export const About = () => {
   return (
@@ -10,7 +12,7 @@ export const About = () => {
       <div className={'homepage__header'}>
         <Header/>
       </div>
-      <h1>about</h1>
+      <Banner imgSrc={slide2} imgAlt={'Car'} label={'About Us'}/>
     </div>
   );
 };

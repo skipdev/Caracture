@@ -18,18 +18,9 @@ export const Button = ({ type, label, active, ...props }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Is this the principal call to action on the page?
-   */
   type: PropTypes.oneOf(['primary', 'secondary', 'plain']),
-  /**
-   * Button contents
-   */
   label: PropTypes.string.isRequired,
   active: PropTypes.bool,
-  /**
-   * Optional click handler
-   */
   onClick: PropTypes.func,
 };
 

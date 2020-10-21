@@ -1,6 +1,7 @@
 import React from 'react';
 import './services.css';
 import {Header} from "./Header";
+import {PhotoGallery} from "./PhotoGallery";
 
 export const Services = () => {
   return (
@@ -11,6 +12,7 @@ export const Services = () => {
         <Header/>
       </div>
       <h1>Services Page</h1>
+      <PhotoGallery/>
     </div>
   );
 };

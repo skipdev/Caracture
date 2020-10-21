@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Homepage} from "./stories/Homepage";
 import {About} from "./stories/About";

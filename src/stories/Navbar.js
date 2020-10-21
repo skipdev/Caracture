@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export const Navbar = ({ label, ...props }) => {
     return (
-      <navbar
+      <div
           type="navbar"
           className={['navbar'].join(' ')}
           {...props}
@@ -17,6 +17,6 @@ export const Navbar = ({ label, ...props }) => {
               <Link to={"/services"}> <Button label={'Services'} type={'plain'}/></Link>
               <Link to={"/contact"}> <Button label={'Contact'} type={'plain'}/></Link>
           </div>
-      </navbar>
+      </div>
   );
 };

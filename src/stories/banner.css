@@ -11,11 +11,11 @@ header {
 header .header__logo--wrapper {
   position: absolute;
   margin-left: 2em;
-  margin-top: 8em;
+  margin-top: 1em;
   z-index: 100;
 }
 header .header__navbar--wrapper {
   float: right;
   height: 100%;
 }
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=banner.css.map */

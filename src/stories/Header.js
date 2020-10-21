@@ -5,11 +5,12 @@ import {Logo} from "./Logo";
 
 export const Header = () => (
     <header>
-      <div className={'header__logo--wrapper'}>
-        <Logo/>
-      </div>
-      <div className={'header__navbar--wrapper'}>
-        <Navbar/>
-      </div>
+        <div className={'header__logo--wrapper'}>
+            <Logo/>
+        </div>
+        <div/>
+        <div className={'header__navbar--wrapper'}>
+            <Navbar/>
+        </div>
     </header>
 );
