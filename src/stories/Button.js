@@ -9,7 +9,7 @@ export const Button = ({ type, label, active, ...props }) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${type}`, `storybook-button--${active && 'active'}`].join(' ')}
+      className={['storybook-button', `storybook-button--${label.toLowerCase()}`, `storybook-button--${type}`].join(' ')}
       {...props}
     >
       {label}
@@ -20,13 +20,11 @@ export const Button = ({ type, label, active, ...props }) => {
 Button.propTypes = {
   type: PropTypes.oneOf(['primary', 'secondary', 'plain']),
   label: PropTypes.string.isRequired,
-  active: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
   type: 'primary',
-  active: false,
   label: 'hi',
   onClick: undefined,
 };

@@ -19,4 +19,16 @@
 .navbar__buttons a:hover {
   color: white;
 }
+.navbar__active-home .storybook-button--home {
+  color: white;
+}
+.navbar__active-about .storybook-button--about {
+  color: white;
+}
+.navbar__active-services .storybook-button--services {
+  color: white;
+}
+.navbar__active-contact .storybook-button--contact {
+  color: white;
+}
 /*# sourceMappingURL=navbar.css.map */

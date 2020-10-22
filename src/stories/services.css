@@ -5,4 +5,13 @@
   width: 80%;
   margin: 0 auto;
 }
+.services__text {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-top: -7em;
+  margin-bottom: 2em;
+}
 /*# sourceMappingURL=services.css.map */

@@ -10,7 +10,7 @@ export const Contact = () => {
       className={['contact'].join(' ')}
     >
       <div className={'contact__header'}>
-        <Header/>
+        <Header active={'contact'}/>
       </div>
       <div className={'contact__form'}>
         <div className={'whiteBG'}/>

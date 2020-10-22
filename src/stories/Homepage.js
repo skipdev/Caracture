@@ -9,7 +9,7 @@ export const Homepage = () => {
       className={['homepage'].join(' ')}
     >
       <div className={'homepage__header'}>
-        <Header/>
+        <Header active={'home'}/>
       </div>
       <div className={'homepage__carousel'}>
         <ControlledCarousel/>

@@ -7,10 +7,11 @@
 }
 .banner {
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   align-items: center;
   position: relative;
-  top: -10em;
+  top: -30vh;
+  margin-bottom: -20vh;
 }
 .banner__img,
 .banner__img img {
