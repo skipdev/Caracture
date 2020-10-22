@@ -15,7 +15,7 @@
     overflow-x: hidden;
     & .carousel-caption {
       text-align: left;
-      width: 40%;
+      width: 50%;
       bottom: 4em;
       left: 6em;
       & h3 {
@@ -42,3 +42,31 @@
     }
   }
 }
+@media only screen and (max-width: 600px) {
+  .homepage {
+    background-color: @dark-grey;
+    &__carousel {
+      & .carousel-caption {
+        position: absolute;
+        text-align: left;
+        width: 80%;
+        bottom: 0;
+        left: 2em;
+        & h3 {
+          font-size: 1.5em;
+        }
+        & Button {
+          margin-top: 1em;
+          font-size: 1em;
+          padding: 0 .5em;
+          width: 50vw;
+        }
+      }
+      & img {
+        width: 100vw !important;
+        height: 40vh;
+      }
+    }
+  }
+}
+
