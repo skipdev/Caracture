@@ -1,6 +1,7 @@
 @import "assets/bourbonFont.css";
 .contact {
-  background-color: #282c34;
+  background-image: url('https://images.unsplash.com/photo-1519581472129-9abf8d19f696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
   height: 100vh;
 }
 .contact__top {
@@ -16,8 +17,8 @@
   z-index: 3;
   align-self: flex-start;
   margin: 0 0.2em;
-  margin-bottom: 1em;
-  color: #1D3D85;
+  margin-bottom: 0.5em;
+  color: white;
 }
 .contact__img {
   z-index: 3;
@@ -35,20 +36,19 @@
   margin: 0 auto;
   padding: 2em;
   margin-top: 15vh;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
+}
+.contact-form {
+  border-radius: 4px;
+}
+.contact-form button {
+  float: right;
+  margin-bottom: 1em;
+  margin-right: 0.7em;
 }
 .contact-modal__wrapper {
   z-index: 2;
   width: 100%;
-}
-.contact .whiteBG {
-  background-color: white;
-  content: '.';
-  width: 100vw;
-  height: 45vh;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
 }
 /*# sourceMappingURL=contact.css.map */

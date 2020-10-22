@@ -4,10 +4,11 @@
   z-index: 2;
 }
 .contact-form .form-column:first-child {
+  margin-left: 0.3em;
   width: 40%;
 }
 .contact-form .form-column:last-child {
-  width: 60%;
+  width: 59%;
 }
 .contact-form .form-group {
   margin: 1em;
