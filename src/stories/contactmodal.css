@@ -11,7 +11,7 @@
 .contact-modal__right {
   z-index: 2;
   font-family: BourbonGrotesque-Regular, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: white;
   background-color: #1D3D85;
   width: 22%;
@@ -21,5 +21,24 @@
   align-items: center;
   margin-left: 1em;
   border-radius: 4px;
+}
+.contact-modal__right > span:first-child {
+  margin-bottom: 1em;
+}
+.contact-modal__right > span a {
+  color: white;
+}
+.contact-modal__right > span a:active {
+  color: white;
+}
+.contact-modal__right > span a:hover {
+  color: #dedede;
+}
+.contact-modal__cursor {
+  position: absolute;
+  color: white;
+  height: 1em;
+  margin-top: 2.8em;
+  margin-left: 2.8em;
 }
 /*# sourceMappingURL=contactmodal.css.map */

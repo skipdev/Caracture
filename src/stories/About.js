@@ -27,6 +27,7 @@ export const About = () => {
             <p>Please contact us  <Link to={"/contact"}>here</Link> for more details.</p>
             <br/>
           </div>
+          <hr/>
         </div>
         <div className={'about__column about__video-wrapper'}>
           <div className={'about__video'}>

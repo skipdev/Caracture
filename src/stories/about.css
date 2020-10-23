@@ -18,12 +18,15 @@
   flex-direction: column;
 }
 .about__text {
-  text-align: center;
+  text-align: right;
   color: white;
   font-size: 1em;
+  line-height: 1em;
+  width: 90%;
+  align-self: flex-end;
 }
 .about__text-wrapper {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 .about__video {
   width: 100%;
@@ -31,5 +34,9 @@
 }
 .about__video-wrapper {
   width: 70%;
+}
+.about hr {
+  width: 100%;
+  border-top: 1px solid white;
 }
 /*# sourceMappingURL=about.css.map */

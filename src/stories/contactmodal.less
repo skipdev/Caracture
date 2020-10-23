@@ -12,7 +12,7 @@
   &__right {
     z-index: 2;
     font-family: BourbonGrotesque-Regular, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
     background-color: @blue;
     width: 22%;
@@ -22,5 +22,26 @@
     align-items: center;
     margin-left: 1em;
     border-radius: 4px;
+    & > span {
+      &:first-child {
+        margin-bottom: 1em;
+      }
+      & a {
+        color: white;
+        &:active {
+          color: white;
+        }
+        &:hover {
+          color: @light-grey;
+        }
+      }
+    }
+  }
+  &__cursor {
+    position: absolute;
+    color: white;
+    height: 1em;
+    margin-top: 2.8em;
+    margin-left: 2.8em;
   }
 }

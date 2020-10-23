@@ -19,11 +19,14 @@
     flex-direction: column;
   }
   &__text {
-    text-align: center;
+    text-align: right;
     color: white;
     font-size: 1em;
+    line-height: 1em;
+    width: 90%;
+    align-self: flex-end;
     &-wrapper {
-      margin-top: 5em;
+      margin-top: 2em;
     }
   }
   &__video {
@@ -32,5 +35,9 @@
     &-wrapper {
       width: 70%;
     }
+  }
+  & hr {
+    width: 100%;
+    border-top: 1px solid white;
   }
 }
