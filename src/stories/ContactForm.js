@@ -5,6 +5,7 @@ import './contactform.css';
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 export const ContactForm = () => {
     const [state, setState] = useState({
@@ -44,7 +45,25 @@ export const ContactForm = () => {
       <>
           {result && (
               <p className={`${result.success ? 'success' : 'error'}`}>
-                  {result.message}
+                  {result.success
+                      ?
+                      Swal.fire({
+                          title: 'Success!',
+                          text: 'Thank you for your email. Someone will be in touch shortly to discuss your enquiry.',
+                          icon: 'success',
+                          confirmButtonText: 'Okay'
+                      }).then(() => {
+                          window.location.reload()
+                      })
+                      :
+                      Swal.fire({
+                          title: 'Error!',
+                          text: 'Something went wrong. Please call us, or try again later.',
+                          icon: 'error',
+                          confirmButtonText: 'Okay'
+                      }).then(() => {
+                          window.location.reload()
+                      })}
               </p>
           )}
           <Form className={'contact-form'} onSubmit={sendEmail}>
