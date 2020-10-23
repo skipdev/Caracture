@@ -7,11 +7,11 @@
 }
 .banner {
   width: 100vw;
-  height: 100vh;
-  align-items: center;
+  height: 90vh;
+  display: flex;
   position: relative;
-  top: -30vh;
-  margin-bottom: -20vh;
+  align-items: center;
+  justify-content: center;
 }
 .banner__img,
 .banner__img img {
@@ -20,11 +20,15 @@
 }
 .banner__label {
   font-family: BourbonGrotesque-Regular, sans-serif;
-  margin-top: -1.5em;
   z-index: 100;
-  right: 0.25em;
   color: white;
+  background: rgba(0, 0, 0, 0.7);
   font-size: 8em;
+  position: absolute;
+  top: 40%;
+}
+.banner__icondown {
+  bottom: 0;
   position: absolute;
 }
 /*# sourceMappingURL=banner.css.map */

@@ -4,6 +4,7 @@ import {Header} from "./Header";
 import {PhotoGallery} from "./PhotoGallery";
 import {Banner} from "./Banner";
 import slide2 from "../slide2.jpg";
+import {IconDown} from "./IconDown";
 
 export const Services = () => {
   return (
