@@ -33,6 +33,8 @@
   color: white;
   background: none;
   font-size: 2em;
+  text-align: right;
+  float: right;
 }
 .storybook-button__label {
   align-self: center;

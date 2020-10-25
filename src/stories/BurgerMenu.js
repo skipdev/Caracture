@@ -1,21 +1,40 @@
-import React from "react";
-import { stack as Menu } from 'react-burger-menu'
+import React, { useState, useCallback } from "react";
+import { HamburgerSqueeze } from 'react-animated-burgers';
 import './burgerMenu.css';
 import {Link} from "react-router-dom";
 import {Button} from "./Button";
 
 export const BurgerMenu = () => {
-    function showSettings(event) {
-        event.preventDefault();
+    const [isActive, setIsActive] = useState(false)
+
+    const toggleButton = useCallback(
+        () => setIsActive(prevState => !prevState),
+        [],
+    )
+
+    let toggleMenu = () => {
+        if (isActive) {
+            document.querySelector('.menu__overlay').style.display = 'none';
+        } else {
+            document.querySelector('.menu__overlay').style.display = 'flex';
+        }
     }
 
-    // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
-        <Menu right pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
-            <Link to={"/"} className={'menu-item'}><Button label={'Home'} type={'menu'} active={'home'}/></Link>
-            <Link to={"/about"} className={'menu-item'}> <Button label={'About'} type={'menu'}/></Link>
-            <Link to={"/services"} className={'menu-item'}> <Button label={'Services'} type={'menu'}/></Link>
-            <Link to={"/contact"} className={'menu-item'}> <Button label={'Contact'} type={'menu'}/></Link>
-        </Menu>
-    );
+        <div className={'hamburger__wrapper'} onClick={toggleMenu}>
+            <HamburgerSqueeze
+                buttonColor="#FFBC67"
+                barColor="white"
+                {...{ isActive, toggleButton }}
+            />
+            <div className={'menu__overlay'}>
+                <div className={'menu__wrapper'}>
+                    <Link to={"/"} className={'menu__item'}><Button label={'Home'} type={'menu'} active={'home'}/></Link>
+                    <Link to={"/about"} className={'menu__item'}> <Button label={'About'} type={'menu'}/></Link>
+                    <Link to={"/services"} className={'menu__item'}> <Button label={'Services'} type={'menu'}/></Link>
+                    <Link to={"/contact"} className={'menu__item'}> <Button label={'Contact'} type={'menu'}/></Link>
+                </div>
+            </div>
+        </div>
+    )
 }

@@ -1,29 +1,14 @@
-.bm-burger-button {
+.hamburger__wrapper > button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hamburger__wrapper .menu__overlay {
+  display: none;
+}
+.hamburger__wrapper .menu__overlay .menu__wrapper {
+  display: flex;
   position: fixed;
-  width: 3em;
-  height: 2.6em;
-  right: 2em;
-  top: 2.3em;
-}
-#react-burger-menu-btn {
-  background: white;
-}
-.bm-menu-wrap {
-  margin-top: 8em;
-  padding-left: 5em;
-  width: 100vw !important;
-}
-.menu-item {
-  padding: 1em 0;
-}
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-@media only screen and (min-width: 600px) {
-  .bm-overlay,
-  .bm-menu-wrap,
-  .bm-burger-button {
-    display: none !important;
-  }
+  flex-direction: column;
+  right: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=burgerMenu.css.map */

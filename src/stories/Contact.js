@@ -12,14 +12,16 @@ export const Contact = () => {
       <div className={'contact__header'}>
         <Header active={'contact'}/>
       </div>
-      <div className={'contact__form'}>
-        <div className={'whiteBG'}/>
-        <div className={'contact__top'}>
-          <span className={'contact__title'}>Get In Touch</span>
-          <img className={'contact__img'} src={car} alt={'range rover car'}/>
-        </div>
-        <div className={'contact-modal__wrapper'}>
-          <ContactModal/>
+      <div className={'contact__form--wrapper'}>
+        <div className={'contact__form'}>
+          <div className={'whiteBG'}/>
+          <div className={'contact__top'}>
+            <span className={'contact__title'}>Get In Touch</span>
+            <img className={'contact__img'} src={car} alt={'range rover car'}/>
+          </div>
+          <div className={'contact-modal__wrapper'}>
+            <ContactModal/>
+          </div>
         </div>
       </div>
     </div>
