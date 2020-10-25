@@ -5,7 +5,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.7);
+  //background-color: rgba(0, 0, 0, 0.7);
   height: 4em;
   align-items: center;
   position: relative;
@@ -16,9 +16,28 @@ header {
     margin-top: 1em;
     z-index: 100;
   }
+  & .logo__circle {
+    display: none;
+  }
   & .header__navbar--wrapper {
     float: right;
     height: 100%;
+    & .navbar__burgermenu {
+      height: 3em;
+      width: 3em;
+      right: 1.5em;
+      top: 1.5em;
+      position: fixed;
+      color: white;
+      background: white;
+      & > div {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+      }
+    }
   }
 }
 

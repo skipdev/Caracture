@@ -5,11 +5,14 @@
   flex-direction: column;
   overflow-x: hidden;
   width: 100vw;
-  &__header header {
-    position: unset;
+  height: 100vh;
+  &__header {
+    z-index: 1;
+   & header {
+     position: unset;
+   }
   }
   &__carousel {
-    z-index: -1;
     position: absolute;
     width: 100%;
     overflow-x: hidden;

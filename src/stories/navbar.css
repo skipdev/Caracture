@@ -8,13 +8,13 @@
   height: 100%;
 }
 .navbar__buttons {
-  display: flex;
   flex-direction: row;
   padding: 1em;
   background-color: transparent;
   justify-content: center;
   align-items: center;
   height: 100%;
+  display: none;
 }
 .navbar__buttons a:hover {
   color: white;
