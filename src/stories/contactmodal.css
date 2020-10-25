@@ -41,4 +41,17 @@
   margin-top: 2.8em;
   margin-left: 2.8em;
 }
+@media only screen and (max-width: 600px) {
+  .contact-modal {
+    font-size: small;
+    flex-direction: column;
+  }
+  .contact-modal .contact-form {
+    width: 100%;
+  }
+  .contact-modal__right {
+    width: 100%;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=contactmodal.css.map */

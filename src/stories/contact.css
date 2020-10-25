@@ -2,7 +2,9 @@
 .contact {
   background-image: url('https://images.unsplash.com/photo-1519581472129-9abf8d19f696?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
-  height: 100%;
+  background-color: #282c34;
+  height: 100vh;
+  width: 100vw;
 }
 .contact__top {
   display: flex;
@@ -35,9 +37,16 @@
   width: 75%;
   margin: 0 auto;
   padding: 2em;
-  margin-top: 20vh;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
+  margin-top: 5em;
+}
+.contact__form--wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-form {
   border-radius: 4px;
@@ -50,5 +59,20 @@
 .contact-modal__wrapper {
   z-index: 2;
   width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .contact__form {
+    margin-top: 0;
+    width: 100%;
+    padding: 1em;
+  }
+  .contact__img {
+    display: none;
+  }
+  .contact__title {
+    font-size: 2em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

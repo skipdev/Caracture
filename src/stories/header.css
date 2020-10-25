@@ -3,9 +3,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  height: 4em;
   align-items: center;
-  position: relative;
+  position: absolute;
   z-index: 109000;
 }
 header .header__logo--wrapper {
@@ -21,49 +20,17 @@ header .header__navbar--wrapper {
   float: right;
   height: 100%;
 }
-header .header__navbar--wrapper .navbar__burgermenu {
-  height: 3em;
-  width: 3em;
-  right: 1.5em;
-  top: 1.5em;
-  position: fixed;
-  color: white;
-  background: white;
-}
-header .header__navbar--wrapper .navbar__burgermenu > div {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
 @media only screen and (max-width: 600px) {
   header {
     position: relative;
     background-color: transparent;
-    height: 15em;
+    height: 13em;
     display: flex !important;
     flex-direction: column-reverse;
   }
   header .header__navbar--wrapper {
     height: unset;
     align-self: flex-end;
-  }
-  header .header__navbar--wrapper .navbar__burgermenu {
-    height: 3em;
-    width: 3em;
-    right: 1.5em;
-    top: 1.5em;
-    position: fixed;
-    color: white;
-    background: white;
-  }
-  header .header__navbar--wrapper .navbar__burgermenu > div {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
   }
   header .header__logo--wrapper {
     margin: 0;
@@ -72,13 +39,14 @@ header .header__navbar--wrapper .navbar__burgermenu > div {
     z-index: unset !important;
   }
   header .logo__circle {
+    display: flex;
     position: absolute;
     color: white;
-    height: 15em;
-    width: 15em;
-    margin-bottom: -4.5em;
+    height: 9em;
+    width: 17em;
     background: white;
-    border-radius: 1000px;
+    border-radius: 1000px 1000px 0 0;
+    content: '';
   }
 }
 /*# sourceMappingURL=header.css.map */
