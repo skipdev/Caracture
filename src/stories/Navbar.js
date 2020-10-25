@@ -19,8 +19,8 @@ export const Navbar = ({ active, ...props }) => {
               <Link to={"/services"}> <Button label={'Services'} type={'plain'}/></Link>
               <Link to={"/contact"}> <Button label={'Contact'} type={'plain'}/></Link>
           </div>
-          <div className={'navbar__cross'}>
-              {/*<BurgerMenu/>*/}
+          <div className={'navbar__burgermenu'}>
+              <BurgerMenu/>
           </div>
       </div>
   );

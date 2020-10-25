@@ -44,8 +44,26 @@
 
 @media only screen and (max-width: 600px) {
   .about {
+    overflow-x: unset;
     &__text {
       font-size: .8em;
+      text-align: center;
+      margin: 0 auto;
+      &-wrapper {
+        margin-top: 1.5em;
+      }
+    }
+    &__row {
+      flex-direction: column;
+    }
+    &__video {
+      width: 100%;
+      height: 100%;
+      &-wrapper {
+        width: 100%;
+        margin-top: -5em;
+        background-color: @dark-grey;
+      }
     }
   }
 }

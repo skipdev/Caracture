@@ -6,6 +6,7 @@ import PropTypes from "prop-types";
 
 export const Header = ({ active, ...props }) => (
     <header>
+        <div className={'logo__circle'}>.</div>
         <div className={'header__logo--wrapper'}>
             <Logo/>
         </div>

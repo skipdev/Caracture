@@ -62,7 +62,8 @@
   }
   .homepage__carousel img {
     width: 100vw !important;
-    height: 40vh;
+    height: 80vh;
+    margin-top: 11em;
   }
 }
 /*# sourceMappingURL=homepage.css.map */
