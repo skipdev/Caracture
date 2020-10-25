@@ -19,6 +19,9 @@
 .navbar__buttons a:hover {
   color: white;
 }
+.navbar__cross {
+  display: none;
+}
 .navbar__active-home .storybook-button--home {
   color: white;
 }
@@ -30,5 +33,10 @@
 }
 .navbar__active-contact .storybook-button--contact {
   color: white;
+}
+@media only screen and (max-width: 600px) {
+  .navbar__buttons {
+    display: none;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */

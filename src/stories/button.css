@@ -29,6 +29,12 @@
   color: #9f9f9f;
   background-color: transparent;
 }
+.storybook-button--menu {
+  color: white;
+  background: none;
+  font-size: 2em;
+  margin-left: -1em;
+}
 .storybook-button__label {
   align-self: center;
 }

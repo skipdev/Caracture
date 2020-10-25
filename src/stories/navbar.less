@@ -20,6 +20,9 @@
       color: white;
     }
   }
+  &__cross {
+    display: none;
+  }
   &__active-home {
     & .storybook-button--home {
       color: white;
@@ -38,6 +41,14 @@
   &__active-contact {
     & .storybook-button--contact {
       color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    &__buttons {
+      display: none;
     }
   }
 }

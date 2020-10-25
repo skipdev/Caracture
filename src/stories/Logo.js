@@ -10,7 +10,7 @@ export const Logo = () => {
     <img
       className={['logo',].join(' ')}
       src={logo}
-      alt={'skipdev logo'}>
+      alt={'caracture logo'}>
     </img>
   );
 };

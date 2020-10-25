@@ -1,6 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import { Button } from './Button';
+import { BurgerMenu } from './BurgerMenu';
 import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 
@@ -17,6 +18,9 @@ export const Navbar = ({ active, ...props }) => {
               <Link to={"/about"}> <Button label={'About'} type={'plain'}/></Link>
               <Link to={"/services"}> <Button label={'Services'} type={'plain'}/></Link>
               <Link to={"/contact"}> <Button label={'Contact'} type={'plain'}/></Link>
+          </div>
+          <div className={'navbar__cross'}>
+              {/*<BurgerMenu/>*/}
           </div>
       </div>
   );

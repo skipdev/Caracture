@@ -14,4 +14,14 @@
   margin-top: 3em;
   margin-bottom: 2em;
 }
+@media only screen and (max-width: 600px) {
+  .services__text {
+    font-size: 0.8em;
+    width: 80%;
+    margin: 6em auto 3em;
+  }
+  .services__gallery {
+    padding-bottom: 2em;
+  }
+}
 /*# sourceMappingURL=services.css.map */

@@ -31,4 +31,15 @@
   bottom: 0;
   position: absolute;
 }
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 40vh;
+  }
+  .banner__label {
+    font-size: 3.5em;
+  }
+  .banner__icondown {
+    margin-bottom: -14vh;
+  }
+}
 /*# sourceMappingURL=banner.css.map */
