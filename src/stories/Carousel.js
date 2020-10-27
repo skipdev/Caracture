@@ -6,6 +6,7 @@ import slide2 from '../slide2.jpg';
 import slide3 from '../slide3.jpg';
 import slide4 from '../slide4.jpg';
 import {Button} from "./Button";
+import {Link} from 'react-router-dom';
 
 export const ControlledCarousel = () => {
   const [index, setIndex] = useState(0);
@@ -24,7 +25,7 @@ export const ControlledCarousel = () => {
           />
           <Carousel.Caption>
             <h3>Call us now to find out about high-quality personalisation for your Range Rover</h3>
-            <Button type={"secondary"} label={'Get in touch'}/>
+            <Link to={"/contact"}><Button label={'Get in touch'} type={'secondary'}/></Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>

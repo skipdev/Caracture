@@ -1,5 +1,12 @@
 .hamburger__wrapper > button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1000%;
+  height: 4.5em;
+  width: 4.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 .hamburger__wrapper .menu__overlay {
   display: none;
@@ -9,6 +16,6 @@
   position: fixed;
   flex-direction: column;
   right: 1em;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 /*# sourceMappingURL=burgerMenu.css.map */

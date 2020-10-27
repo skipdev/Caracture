@@ -43,5 +43,8 @@
   .navbar__buttons {
     display: none;
   }
+  .navbar__burgermenu {
+    z-index: 999999;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
