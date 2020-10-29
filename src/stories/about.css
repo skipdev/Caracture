@@ -47,9 +47,10 @@
     font-size: 0.8em;
     text-align: center;
     margin: 0 auto;
+    padding: 1em;
   }
   .about__text-wrapper {
-    margin-top: 1.5em;
+    margin-top: 5em;
   }
   .about__row {
     flex-direction: column;
