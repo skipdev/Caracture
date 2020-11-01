@@ -27,7 +27,8 @@ export const ContactForm = () => {
                 setResult(response.data);
                 setState({name: '', surname: '', email: '', phone: '', location: '', reg: '', enquiry: ''});
             })
-            .catch(() => {
+            .catch((error) => {
+                console.log('error contactform.js', error);
                 setResult({success: false, message: 'Something went wrong. Try again later'});
             });
     }
@@ -62,7 +63,7 @@ export const ContactForm = () => {
                           icon: 'error',
                           confirmButtonText: 'Okay'
                       }).then(() => {
-                          window.location.reload()
+                          window.location.href = "http://www.caracture.co.uk";
                       })}
               </p>
           )}
