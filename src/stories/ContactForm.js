@@ -37,8 +37,11 @@ export const ContactForm = () => {
         emailjs.send("service_hl2swmq","template_c08hmud",{
             from_name: name + ' ' + surname,
             to_name: 'Caracture',
-            message: 'Name: ' + name + '\n Surname: ' + surname + '\n Email: ' + email + '\n Phone: ' + phone + '\n Location: ' + location + '\n Registration: ' + reg + '\n Enquiry: ' + enquiry,
-            reply_to: email,
+            from_phone: phone,
+            from_location: location,
+            from_reg: reg,
+            message: enquiry,
+            reply_to: email
         })
         setState({name: '', surname: '', email: '', phone: '', location: '', reg: '', enquiry: ''});
     };
