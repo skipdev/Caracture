@@ -4,8 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './contactform.css';
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import axios from 'axios';
 import Swal from 'sweetalert2';
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init("user_cDnFvAUR6X6InJx5miron");
 
 export const ContactForm = () => {
     const [state, setState] = useState({
@@ -18,20 +20,7 @@ export const ContactForm = () => {
         enquiry: ''
     });
 
-    const [result, setResult] = useState(null);
-    const sendEmail = event => {
-        event.preventDefault();
-        axios
-            .post('/send', {...state})
-            .then(response => {
-                setResult(response.data);
-                setState({name: '', surname: '', email: '', phone: '', location: '', reg: '', enquiry: ''});
-            })
-            .catch((error) => {
-                console.log('error contactform.js', error);
-                setResult({success: false, message: 'Something went wrong. Try again later'});
-            });
-    }
+    // const [result, setResult] = useState();
 
     const onInputChange = event => {
         const { name, value } = event.target;
@@ -42,32 +31,21 @@ export const ContactForm = () => {
         });
     };
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const { name, surname, email, phone, location, reg, enquiry } = state;
+        emailjs.send("service_hl2swmq","template_c08hmud",{
+            from_name: name + ' ' + surname,
+            to_name: 'Caracture',
+            message: 'Name: ' + name + '\n Surname: ' + surname + '\n Email: ' + email + '\n Phone: ' + phone + '\n Location: ' + location + '\n Registration: ' + reg + '\n Enquiry: ' + enquiry,
+            reply_to: email,
+        })
+        setState({name: '', surname: '', email: '', phone: '', location: '', reg: '', enquiry: ''});
+    };
+
   return (
       <>
-          {result && (
-              <p className={`${result.success ? 'success' : 'error'}`}>
-                  {result.success
-                      ?
-                      Swal.fire({
-                          title: 'Success!',
-                          text: 'Thank you for your email. Someone will be in touch shortly to discuss your enquiry.',
-                          icon: 'success',
-                          confirmButtonText: 'Okay'
-                      }).then(() => {
-                          window.location.reload()
-                      })
-                      :
-                      Swal.fire({
-                          title: 'Error!',
-                          text: 'Something went wrong. Please call us, or try again later.',
-                          icon: 'error',
-                          confirmButtonText: 'Okay'
-                      }).then(() => {
-                          window.location.href = "http://www.caracture.co.uk";
-                      })}
-              </p>
-          )}
-          <Form className={'contact-form'} onSubmit={sendEmail}>
+          <Form className={'contact-form'} onSubmit={handleSubmit}>
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridFirstname">
                       <Form.Label>First Name</Form.Label>
