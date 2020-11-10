@@ -31,7 +31,7 @@ export const About = () => {
         <div className={'about__column about__video-wrapper'}>
           <div className={'about__video'}>
             <iframe width="100%" height="100%"
-                    src="https://www.youtube.com/embed/pPbHiDCUXGw?autoplay=1&mute=1">
+                    src="https://www.youtube.com/embed/nwI1pdG_OSo?autoplay=1&mute=1">
             </iframe>
           </div>
         </div>

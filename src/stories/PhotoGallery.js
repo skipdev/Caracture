@@ -27,20 +27,6 @@ import p24 from '../photos/24.jpg';
 import p25 from '../photos/25.jpg';
 import p26 from '../photos/26.jpg';
 import p27 from '../photos/27.jpg';
-import p28 from '../photos/28.jpg';
-import p29 from '../photos/29.jpg';
-import p30 from '../photos/30.jpg';
-import p31 from '../photos/31.jpg';
-import p32 from '../photos/32.jpg';
-import p33 from '../photos/33.jpg';
-import p34 from '../photos/34.jpg';
-import p35 from '../photos/35.jpg';
-import p36 from '../photos/36.jpg';
-import p37 from '../photos/37.jpg';
-import p38 from '../photos/38.mp4';
-import p39 from '../photos/39.mp4';
-import p40 from '../photos/40.mp4';
-import p41 from '../photos/41.mp4';
 
 import ImageGallery from 'react-image-gallery';
 
@@ -153,62 +139,6 @@ export const PhotoGallery = () => {
         {
             original: p27,
             thumbnail: p27,
-        },
-        {
-            original: p28,
-            thumbnail: p28,
-        },
-        {
-            original: p29,
-            thumbnail: p29,
-        },
-        {
-            original: p30,
-            thumbnail: p30,
-        },
-        {
-            original: p31,
-            thumbnail: p31,
-        },
-        {
-            original: p32,
-            thumbnail: p32,
-        },
-        {
-            original: p33,
-            thumbnail: p33,
-        },
-        {
-            original: p34,
-            thumbnail: p34,
-        },
-        {
-            original: p35,
-            thumbnail: p35,
-        },
-        {
-            original: p36,
-            thumbnail: p36,
-        },
-        {
-            original: p37,
-            thumbnail: p37,
-        },
-        {
-            original: p38,
-            thumbnail: p38,
-        },
-        {
-            original: p39,
-            thumbnail: p39,
-        },
-        {
-            original: p40,
-            thumbnail: p40,
-        },
-        {
-            original: p41,
-            thumbnail: p41,
         },
     ]
 

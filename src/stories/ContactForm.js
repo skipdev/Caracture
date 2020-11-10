@@ -34,7 +34,9 @@ export const ContactForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const { name, surname, email, phone, location, reg, enquiry } = state;
-        emailjs.send("service_hl2swmq","template_c08hmud",{
+        document.querySelector('.loading_spinner').classList.remove('hidden');
+        document.querySelector('.loading_spinner--img').classList.remove('hidden');
+        emailjs.send("service_hl2swmq", "template_c08hmud", {
             from_name: name + ' ' + surname,
             to_name: 'Caracture',
             from_phone: phone,
@@ -42,7 +44,29 @@ export const ContactForm = () => {
             from_reg: reg,
             message: enquiry,
             reply_to: email
-        })
+        }).then(r  => {
+            document.querySelector('.loading_spinner').classList.add('hidden');
+            document.querySelector('.loading_spinner--img').classList.add('hidden');
+            if (r.text === 'OK') {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Thank you for your email. Someone will be in touch shortly to discuss your enquiry.',
+                    icon: 'success',
+                    confirmButtonText: 'Okay'
+                }).then(() => {
+                    window.location.href = '/';
+                })
+            } else {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Something went wrong. Please call us, or try again later.',
+                    icon: 'error',
+                    confirmButtonText: 'Okay'
+                }).then(() => {
+                    window.location.href = '/';
+                })
+            }
+        });
         setState({name: '', surname: '', email: '', phone: '', location: '', reg: '', enquiry: ''});
     };
 
@@ -51,8 +75,9 @@ export const ContactForm = () => {
           <Form className={'contact-form'} onSubmit={handleSubmit}>
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridFirstname">
-                      <Form.Label>First Name</Form.Label>
+                      <Form.Label>* First Name</Form.Label>
                       <Form.Control
+                          required
                           type="text"
                           name="name"
                           value={state.name}
@@ -75,8 +100,9 @@ export const ContactForm = () => {
 
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridEmail">
-                      <Form.Label>Email</Form.Label>
+                      <Form.Label>* Email</Form.Label>
                       <Form.Control
+                          required
                           type="text"
                           name="email"
                           value={state.email}
@@ -86,8 +112,9 @@ export const ContactForm = () => {
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPhone">
-                      <Form.Label>Phone Number</Form.Label>
+                      <Form.Label>* Phone Number</Form.Label>
                       <Form.Control
+                          required
                           type="tel"
                           name="phone"
                           value={state.phone}
@@ -100,8 +127,9 @@ export const ContactForm = () => {
               <div className={"form-row"}>
                   <div className={"form-column"}>
                       <Form.Group controlId="formGridLocation">
-                          <Form.Label>Location</Form.Label>
+                          <Form.Label>* Location</Form.Label>
                           <Form.Control
+                              required
                               type="text"
                               name="location"
                               value={state.location}
@@ -124,8 +152,9 @@ export const ContactForm = () => {
 
                   <div className={"form-column"}>
                       <Form.Group id={'form--enquiry'} controlId="formGridTextarea">
-                          <Form.Label>Enquiry</Form.Label>
+                          <Form.Label>* Enquiry</Form.Label>
                           <Form.Control
+                              required
                               as="textarea"
                               name="enquiry"
                               value={state.enquiry}
@@ -139,6 +168,9 @@ export const ContactForm = () => {
 
               <Button variant="primary" type='submit'>Submit</Button>
           </Form>
+          <div className={'loading_spinner hidden'}>
+              <img className={'loading_spinner--img hidden'} src="http://www.jettools.com/images/animated_spinner.gif" alt={'loading spinner'}/>
+          </div>
       </>
   );
 }
