@@ -9,8 +9,8 @@ export const ContactModal = () => {
       <div className={'contact-modal'}>
           <ContactForm/>
           <div className={'contact-modal__right'}>
-              <span>087787 2309887</span>
-              <span><a href="tel:07710486789">Call now</a></span>
+              <span>023 9223 3900</span>
+              <span><a href="tel:02392233900">Call now</a></span>
               <img src={cursor} alt={'mouse cursor'} className={'contact-modal__cursor'}/>
           </div>
       </div>

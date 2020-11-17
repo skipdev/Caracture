@@ -75,13 +75,12 @@ export const ContactForm = () => {
           <Form className={'contact-form'} onSubmit={handleSubmit}>
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridFirstname">
-                      <Form.Label>* First Name</Form.Label>
+                      <Form.Label>First Name</Form.Label>
                       <Form.Control
                           required
                           type="text"
                           name="name"
                           value={state.name}
-                          placeholder="John"
                           onChange={onInputChange}
                       />
                   </Form.Group>
@@ -92,7 +91,6 @@ export const ContactForm = () => {
                           type="text"
                           name="surname"
                           value={state.surname}
-                          placeholder="Smith"
                           onChange={onInputChange}
                       />
                   </Form.Group>
@@ -100,25 +98,23 @@ export const ContactForm = () => {
 
               <Form.Row>
                   <Form.Group as={Col} controlId="formGridEmail">
-                      <Form.Label>* Email</Form.Label>
+                      <Form.Label>Email</Form.Label>
                       <Form.Control
                           required
                           type="text"
                           name="email"
                           value={state.email}
-                          placeholder="johnsmith@gmail.com"
                           onChange={onInputChange}
                       />
                   </Form.Group>
 
                   <Form.Group as={Col} controlId="formGridPhone">
-                      <Form.Label>* Phone Number</Form.Label>
+                      <Form.Label>Phone Number</Form.Label>
                       <Form.Control
                           required
                           type="tel"
                           name="phone"
                           value={state.phone}
-                          placeholder="07123456789"
                           onChange={onInputChange}
                       />
                   </Form.Group>
@@ -127,13 +123,12 @@ export const ContactForm = () => {
               <div className={"form-row"}>
                   <div className={"form-column"}>
                       <Form.Group controlId="formGridLocation">
-                          <Form.Label>* Location</Form.Label>
+                          <Form.Label>Location</Form.Label>
                           <Form.Control
                               required
                               type="text"
                               name="location"
                               value={state.location}
-                              placeholder="Southampton"
                               onChange={onInputChange}
                           />
                       </Form.Group>
@@ -144,7 +139,6 @@ export const ContactForm = () => {
                               type="text"
                               name="reg"
                               value={state.reg}
-                              placeholder="NU20 REG"
                               onChange={onInputChange}
                           />
                       </Form.Group>
@@ -152,14 +146,13 @@ export const ContactForm = () => {
 
                   <div className={"form-column"}>
                       <Form.Group id={'form--enquiry'} controlId="formGridTextarea">
-                          <Form.Label>* Enquiry</Form.Label>
+                          <Form.Label>Enquiry</Form.Label>
                           <Form.Control
                               required
                               as="textarea"
                               name="enquiry"
                               value={state.enquiry}
                               rows="5"
-                              placeholder="What are you looking for?"
                               onChange={onInputChange}
                           />
                       </Form.Group>

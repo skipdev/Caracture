@@ -16,6 +16,9 @@
   width: 100%;
   overflow-x: hidden;
 }
+.homepage__carousel .dark-text {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .homepage__carousel .carousel-caption {
   text-align: left;
   width: 50%;
@@ -35,9 +38,14 @@
   left: unset;
   margin-right: 3em;
 }
-.homepage__carousel img {
+.homepage__carousel .carousel-item {
   width: 100vw !important;
-  height: 100vh;
+  height: 100vh !important;
+}
+.homepage__carousel img {
+  object-fit: cover;
+  width: 100% !important;
+  height: 100%;
 }
 .homepage__carousel .carousel.slide {
   width: 100vw;

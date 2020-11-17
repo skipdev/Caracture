@@ -1,22 +1,30 @@
 .hamburger__wrapper {
   & > button {
-    background-color: rgba(0,0,0, 0.4);
-    border-radius: 1000%;
-    height: 4.5em;
-    width: 4.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    //background-color: rgba(0,0,0, 0.4);
+    //border-radius: 1000%;
+    //height: 4.5em;
+    //width: 4.5em;
+    display: none;
+    //justify-content: center;
+    //align-items: center;
+    //padding: 0;
   }
   & .menu__overlay {
-    display: none;
+    display: flex;
     & .menu__wrapper {
       display: flex;
+      font-size: .7em;
       position: fixed;
-      flex-direction: column;
+      flex-wrap: wrap;
+      flex-direction: row;
       right: 1em;
-      background-color: rgba(0,0,0, 0.8);
+      width: auto;
+      padding: 0 1em;
+      justify-content: space-around;
+      background-color: rgba(255,255,255, 0.2);
+      @media only screen and (max-width: 600px) {
+        font-size: .35em;
+      }
     }
   }
 }

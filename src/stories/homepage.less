@@ -16,6 +16,9 @@
     position: absolute;
     width: 100%;
     overflow-x: hidden;
+    & .dark-text {
+      background-color: rgba(0,0,0,0.3);
+    }
     & .carousel-caption {
       text-align: left;
       width: 50%;
@@ -35,9 +38,14 @@
       left: unset;
       margin-right: 3em;
     }
-    & img {
+    & .carousel-item {
       width: 100vw !important;
-      height: 100vh;
+      height: 100vh !important;
+    }
+    & img {
+      object-fit: cover;
+      width: 100% !important;
+      height: 100%;
     }
     & .carousel.slide {
       width: 100vw;

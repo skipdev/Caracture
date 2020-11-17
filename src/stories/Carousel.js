@@ -25,7 +25,7 @@ export const ControlledCarousel = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Call us now to find out about high-quality personalisation for your Range Rover</h3>
+                    <h3 className={'dark-text'}>Call us now to find out about high-quality personalisation for your Range Rover / Sport</h3>
                     <Link to={'/contact'}><Button label={'Get in touch'} type={'secondary'}/></Link>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -49,8 +49,9 @@ export const ControlledCarousel = () => {
                     alt="Third slide"
                 />
                 <Carousel.Caption>
-                    <h3>Want a personalised tread plate?</h3>
-                    <p>We can help.</p>
+                    <h3>Treadplates</h3>
+                    <p>Personalised, illuminated treadplates, finishes
+                        to suit</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
@@ -61,8 +62,9 @@ export const ControlledCarousel = () => {
                     alt="Fourth slide"
                 />
                 <Carousel.Caption>
-                    <h3>Sweep indicator upgrades</h3>
-                    <p>We dan personalise almost any part of your Range Rover</p>
+                    <h3>Lighting upgrades</h3>
+                    <p>Smoked lens, sweep indicators and
+                        illuminated grilles</p>
                 </Carousel.Caption>
             </Carousel.Item>
 
@@ -73,8 +75,8 @@ export const ControlledCarousel = () => {
                     alt="Fifth slide"
                 />
                 <Carousel.Caption>
-                    <h3>However you'd like your Range Rover to look, we can help</h3>
-                    <p>Get in touch today to discuss your ideas</p>
+                    <h3>Re-finished carbon fibre interior</h3>
+                    <p>Other finishes are available</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

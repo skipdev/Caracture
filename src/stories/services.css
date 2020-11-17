@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'BourbonGrotesque-Regular';
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot');
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.svg#BourbonGrotesque-Regular') format('svg'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.ttf') format('truetype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff') format('woff'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 .services {
   background-color: #282c34;
 }
@@ -14,6 +21,29 @@
   margin-top: 3em;
   margin-bottom: 2em;
 }
+.services__selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0;
+}
+.services__selection--row {
+  display: flex;
+  flex-direction: row;
+}
+.services__selection img {
+  width: 300px;
+  height: 300px;
+}
+.services__selection p {
+  color: white;
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  font-family: BourbonGrotesque-Regular, sans-serif;
+}
+.services .service--wrapper {
+  margin: 2em;
+}
 @media only screen and (max-width: 600px) {
   .services__text {
     font-size: 0.8em;
@@ -22,6 +52,13 @@
   }
   .services__gallery {
     padding-bottom: 2em;
+  }
+  .services__selection--row {
+    flex-direction: column;
+  }
+  .services__selection img {
+    width: 200px;
+    height: 200px;
   }
 }
 /*# sourceMappingURL=services.css.map */

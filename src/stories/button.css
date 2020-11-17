@@ -30,7 +30,7 @@
   background-color: transparent;
 }
 .storybook-button--menu {
-  color: white;
+  color: black !important;
   background: none;
   font-size: 2em;
   text-align: right;

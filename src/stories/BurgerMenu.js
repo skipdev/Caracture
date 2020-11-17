@@ -5,27 +5,26 @@ import {Link} from "react-router-dom";
 import {Button} from "./Button";
 
 export const BurgerMenu = () => {
-    const [isActive, setIsActive] = useState(false)
-
-    const toggleButton = useCallback(
-        () => setIsActive(prevState => !prevState),
-        [],
-    )
-
-    let toggleMenu = () => {
-        if (isActive) {
-            document.querySelector('.menu__overlay').style.display = 'none';
-        } else {
-            document.querySelector('.menu__overlay').style.display = 'flex';
-        }
-    }
+    // const [isActive, setIsActive] = useState(false)
+    //
+    // const toggleButton = useCallback(
+    //     () => setIsActive(prevState => !prevState),
+    //     [],
+    // )
+    //
+    // let toggleMenu = () => {
+    //     if (isActive) {
+    //         document.querySelector('.menu__overlay').style.display = 'none';
+    //     } else {
+    //         document.querySelector('.menu__overlay').style.display = 'flex';
+    //     }
+    // }
 
     return (
-        <div className={'hamburger__wrapper'} onClick={toggleMenu}>
+        <div className={'hamburger__wrapper'}>
             <HamburgerSqueeze
                 buttonColor="#FFBC67"
                 barColor="white"
-                {...{ isActive, toggleButton }}
             />
             <div className={'menu__overlay'}>
                 <div className={'menu__wrapper'}>
