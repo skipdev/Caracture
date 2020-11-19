@@ -61,7 +61,9 @@ export const Treadplates = () => {
         <Banner imgSrc={cover} imgAlt={'Car'} label={'Treadplates'}/>
       </div>
       <div className={'services__text'}>
-        We manufacture and fit personalised, illuminated treadplates for front and rear in Carbon fibre, Anodised and powder coated. Available for Range Rover and Range Rover Sport 2014 onwards. Personalised, illuminated treadplates, finishes to suit.
+        We manufacture and fit personalised, illuminated treadplates for front and rear in Carbon
+        fibre, Anodised and powder coated. Available for Range Rover and Range Rover Sport 2014
+        onwards. These can be retro-fitted to ANY vehicle. Fitted from £650.
       </div>
       <div className={'services__gallery'}>
         <ImageGallery items={images} />

@@ -25,10 +25,6 @@ export const Lighting = () => {
       thumbnail: p39,
     },
     {
-      original: p22,
-      thumbnail: p22,
-    },
-    {
       original: p37,
       thumbnail: p37,
     },

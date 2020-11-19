@@ -25,7 +25,7 @@ export const ControlledCarousel = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3 className={'dark-text'}>Call us now to find out about high-quality personalisation for your Range Rover / Sport</h3>
+                    <h3 className={'dark-text'}>High quality personalisation for your Range Rover / Sport</h3>
                     <Link to={'/contact'}><Button label={'Get in touch'} type={'secondary'}/></Link>
                 </Carousel.Caption>
             </Carousel.Item>

@@ -77,7 +77,6 @@ export const ContactForm = () => {
                   <Form.Group as={Col} controlId="formGridFirstname">
                       <Form.Label>First Name</Form.Label>
                       <Form.Control
-                          required
                           type="text"
                           name="name"
                           value={state.name}
@@ -100,7 +99,6 @@ export const ContactForm = () => {
                   <Form.Group as={Col} controlId="formGridEmail">
                       <Form.Label>Email</Form.Label>
                       <Form.Control
-                          required
                           type="text"
                           name="email"
                           value={state.email}
@@ -111,7 +109,6 @@ export const ContactForm = () => {
                   <Form.Group as={Col} controlId="formGridPhone">
                       <Form.Label>Phone Number</Form.Label>
                       <Form.Control
-                          required
                           type="tel"
                           name="phone"
                           value={state.phone}
@@ -125,7 +122,6 @@ export const ContactForm = () => {
                       <Form.Group controlId="formGridLocation">
                           <Form.Label>Location</Form.Label>
                           <Form.Control
-                              required
                               type="text"
                               name="location"
                               value={state.location}
@@ -148,7 +144,6 @@ export const ContactForm = () => {
                       <Form.Group id={'form--enquiry'} controlId="formGridTextarea">
                           <Form.Label>Enquiry</Form.Label>
                           <Form.Control
-                              required
                               as="textarea"
                               name="enquiry"
                               value={state.enquiry}

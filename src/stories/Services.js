@@ -4,7 +4,7 @@ import {Header} from "./Header";
 import {Banner} from "./Banner";
 import "react-image-gallery/styles/css/image-gallery.css";
 import cover from '../photos/cover.jpeg';
-import pjimg from '../pjimage.jpeg';
+import p19 from '../photos/19.jpg';
 import p3 from '../photos/3.jpg';
 import p11 from '../photos/11.jpg';
 import p20 from '../photos/20.jpg';
@@ -25,13 +25,17 @@ export const Services = () => {
         <div className={'services__selection--row'}>
           <Link to={"/treadplates"} className={'menu__item'}>
             <div className={'service--wrapper'}>
-              <img src={p11} alt={'treadplates'}/>
+              <div className={'img'}>
+                <img src={p11} alt={'treadplates'}/>
+              </div>
               <p>Treadplates</p>
             </div>
           </Link>
           <Link to={"/lighting"} className={'menu__item'}>
             <div className={'service--wrapper'}>
-              <img src={p20} alt={'lighting'}/>
+              <div className={'img'}>
+                <img src={p20} alt={'lighting'}/>
+              </div>
               <p>Lighting</p>
             </div>
           </Link>
@@ -39,13 +43,17 @@ export const Services = () => {
         <div className={'services__selection--row'}>
           <Link to={"/interior"} className={'menu__item'}>
             <div className={'service--wrapper'}>
-              <img src={p3} alt={'interior trim'}/>
+              <div className={'img'}>
+                <img src={p3} alt={'interior trim'}/>
+              </div>
               <p>Interior Trim</p>
             </div>
           </Link>
           <Link to={"/exterior"} className={'menu__item'}>
             <div className={'service--wrapper'}>
-              <img src={pjimg} alt={'exterior trim'}/>
+              <div className={'img'}>
+                <img src={p19} alt={'exterior trim'}/>
+              </div>
               <p>Exterior Trim</p>
             </div>
           </Link>
