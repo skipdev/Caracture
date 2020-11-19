@@ -12,6 +12,8 @@ import p15 from '../photos/15.jpg';
 import p16 from '../photos/16.jpg';
 import p17 from '../photos/17.jpg';
 import p25 from '../photos/25.jpg';
+import tread1 from '../photos/tread1.jpeg';
+import tread2 from '../photos/tread2.jpeg';
 import ImageGallery from 'react-image-gallery';
 
 export const Treadplates = () => {
@@ -27,6 +29,15 @@ export const Treadplates = () => {
     {
       original: p13,
       thumbnail: p13,
+    },
+
+    {
+      original: tread1,
+      thumbnail: tread1,
+    },
+    {
+      original: tread2,
+      thumbnail: tread2,
     },
     {
       original: p14,
