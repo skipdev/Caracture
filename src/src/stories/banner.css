@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'BourbonGrotesque-Regular';
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot');
+  src: local('Bourbon Grotesque Regular'), local('BourbonGrotesque-Regular'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.svg#BourbonGrotesque-Regular') format('svg'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.ttf') format('truetype'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff') format('woff'), url('./assets/fonts/bourbon/BourbonGrotesque-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+.banner__img,
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=banner.css.map */

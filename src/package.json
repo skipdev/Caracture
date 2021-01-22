@@ -1,0 +1,75 @@
+{
+  "name": "caracture",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.0.0",
+    "@emotion/core": "^10.1.1",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "autoprefixer": "^9",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.3",
+    "craco": "0.0.3",
+    "emailjs-com": "^2.6.3",
+    "express": "^4.17.1",
+    "less": "^3.12.2",
+    "postcss": "^7",
+    "react": "^16.14.0",
+    "react-animated-burgers": "^1.2.8",
+    "react-bootstrap": "^1.3.0",
+    "react-burger-menu": "^2.9.0",
+    "react-dom": "^16.14.0",
+    "react-image-gallery": "^1.0.8",
+    "react-mail-form": "^2.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.1",
+    "react-spinners": "^0.9.0",
+    "storybook": "^6.0.26",
+    "styled-components": "^5.2.1",
+    "sweetalert2": "^10.8.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "webpack": "^4.44.2"
+  },
+  "scripts": {
+    "start": "../src/node_modules/.bin/craco start",
+    "build": "../src/node_modules/.bin/craco build",
+    "test": "../src/node_modules/.bin/craco test",
+    "eject": "../src/node_modules/.bin/react-scripts eject",
+    "storybook": "../src/node_modules/.bin/start-storybook -p 6006 -s public",
+    "build-storybook": "../src/node_modules/.bin/build-storybook -s public",
+    "start-server": "node server/index.js",
+    "start-app": "npm run build && npm run start-server"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.0.26",
+    "@storybook/addon-essentials": "^6.0.26",
+    "@storybook/addon-links": "^6.0.26",
+    "@storybook/addons": "^6.0.26",
+    "@storybook/node-logger": "^6.0.26",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.26",
+    "babel-loader": "^8.1.0",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.3",
+    "react-is": "^16.13.1"
+  }
+}
