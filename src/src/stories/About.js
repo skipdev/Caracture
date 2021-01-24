@@ -10,12 +10,13 @@ export const About = () => {
     <div
       className={['about w-screen h-screen'].join(' ')}
     >
-      <div className={'about__header w-full h-auto py-2 relative'}>
+      <div className={'about__header w-full h-auto my-2 relative'}>
         <Header active={'about'}/>
       </div>
       {/*<div className={'about__banner absolute'}>*/}
       {/*  <Banner imgSrc={cover2} imgAlt={'Car'} label={'About Us'}/>*/}
       {/*</div>*/}
+      <div className={'bg w-screen h-screen fixed -z-1'}>.</div>
       <div className={'about__row'}>
         <div className={'about__column about__text-wrapper'}>
           <div className={'about__text'}>

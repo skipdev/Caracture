@@ -13,16 +13,14 @@ import {Link} from 'react-router-dom';
 export const Services = () => {
   return (
     <div
-      className={['services w-screen h-screen'].join(' ')}
+      className={['services w-screen h-screen lg:overflow-y-hidden'].join(' ')}
     >
-      <div className={'services__header w-full h-auto py-2 relative'}>
+      <div className={'bg w-screen h-screen fixed -z-1'}>.</div>
+      <div className={'services__header w-full h-auto my-2 relative top-0'}>
         <Header active={'services'}/>
       </div>
-      <div className={'services__banner absolute'}>
-        <Banner imgSrc={cover} imgAlt={'Car'}/>
-      </div>
-      <div className={'services__selection w-2/3 h-full justify-center items-center my-0 mx-auto pt-12'}>
-        <div className={'flex flex-row h-1/3 w-full mb-10 justify-around'}>
+      <div className={'services__selection w-full px-2 md:px-0 md:w-2/3 h-full justify-center items-center my-0 mx-auto pt-12'}>
+        <div className={'flex flex-row h-1/3 w-full mb-16 md:mb-10 justify-around'}>
           <Link to={"/treadplates"} className={'menu__item h-full w-1/2 mr-3'}>
             <div className={'service--wrapper w-full h-full'}>
               <div className={'img w-full h-full cover'}>

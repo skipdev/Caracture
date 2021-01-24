@@ -77,13 +77,11 @@ export const InteriorTrim = () => {
       <div className={'services__header'}>
         <Header active={'services'}/>
       </div>
-      <div className={'services__banner'}>
-        <Banner imgSrc={cover} imgAlt={'Car'} label={'Interior Trim'}/>
-      </div>
-      <div className={'services__text'}>
+      <div className={'bg w-screen h-screen fixed -z-1'}>.</div>
+      <div className={'services__text text-white m-3 my-5'}>
         We manufacture and fit Interior trim solutions. Carbon fibre finish is popular but other solutions are available – talk to us. From £450 fitted.
       </div>
-      <div className={'services__gallery'}>
+      <div className={'services__gallery mb-3'}>
         <ImageGallery items={images} />
       </div>
     </div>

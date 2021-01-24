@@ -52,13 +52,11 @@ export const ExteriorTrim = () => {
       <div className={'services__header'}>
         <Header active={'services'}/>
       </div>
-      <div className={'services__banner'}>
-        <Banner imgSrc={cover} imgAlt={'Car'} label={'Exterior Trim'}/>
-      </div>
-      <div className={'services__text'}>
+      <div className={'bg w-screen h-screen fixed -z-1'}>.</div>
+      <div className={'services__text text-white m-3 my-5'}>
         We manufacture and fit exterior trim solutions including grills, vents and lettering.
       </div>
-      <div className={'services__gallery'}>
+      <div className={'services__gallery mb-3'}>
         <ImageGallery items={images} />
       </div>
     </div>
