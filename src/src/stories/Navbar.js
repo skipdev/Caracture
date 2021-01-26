@@ -23,10 +23,10 @@ export const Navbar = ({ active, ...props }) => {
           </div>
           <div className={'flex flex-col p-3 py-6 my-1 w-full md:w-3/4'}>
               <ol className={'flex flex-col mb-6 md:mb-0 md:flex-row space-x-3 md:space-x-7 w-full h-1/2 justify-center items-center'}>
-                  <li className={'text-blue-800 font-bold text-xs md:text-md lg:text-lg flex flex-row justify-center items-center space-x-3'}>
+                  <li><a href="mailto:info@caracture.com" className={'text-blue-800 font-bold text-xs md:text-md lg:text-lg flex flex-row justify-center items-center space-x-3'}>
                       <Icon src={mail} alt={'mail icon'}/>
                       <span>info@caracture.com</span>
-                  </li>
+                  </a></li>
                   <li><a href="tel:02392233900" className={'text-blue-800 font-bold text-xs md:text-md lg:text-lg  flex flex-row justify-center items-center space-x-3'}>
                       <Icon src={phone} alt={'phone icon'}/>
                       <span>023 9223 3900</span>
