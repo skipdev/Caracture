@@ -1,6 +1,5 @@
 import React from 'react';
 import {Header} from "./Header";
-import {ControlledCarousel} from "./Carousel";
 import {Banner} from './Banner';
 import cover from '../photos/cover.jpeg';
 import {Link} from 'react-router-dom';
