@@ -11,6 +11,7 @@ import tp32 from '../photos/tp32.png';
 import tp41 from '../photos/tp41.png';
 import tp42 from '../photos/tp42.png';
 import tp43 from '../photos/tp43.png';
+import $ from 'jquery';
 
 export const ControlledCarousel = () => {
     const [index, setIndex] = useState(0);
@@ -18,6 +19,24 @@ export const ControlledCarousel = () => {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
+
+    const a = () => {
+        $(document).on('click', (e) => {
+            let classes = e.target.classList;
+            console.log(e.target.classList)
+            if (classes.contains('slidechange')) {
+                if (classes.contains('carbon')) {
+                    handleSelect(1);
+                } else if (classes.contains('anodised')) {
+                    handleSelect(2);
+                } else if (classes.contains('powder')) {
+                    handleSelect(3);
+                }
+            }
+        })
+    }
+
+    a();
 
     return (
         <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -37,27 +56,27 @@ export const ControlledCarousel = () => {
                             Available in Carbon fibre, Anodised or Powder coated finishes
                         </p>
                         <p>
-                            Prices from £800 a pair
+                            Prices from £600 a pair
                         </p>
                     </div>
                     <div className={'w-full md:w-2/3 h-full justify-center items-center md:ml-14 z-10 flex flex-col'}>
                         <div className={'w-full h-1/3 flex flex-row items-center justify-center'}>
-                            <video width="100%" height="50vh" style={{"max-height": '50vh !important;'}} controls autoPlay muted>
+                            <video width="100%" height="50vh" style={{"max-height": '50vh !important;'}} controls autoPlay>
                                 <source src={vid} type="video/mp4"/>
                             </video>
                         </div>
                         <div className={'w-full h-1/2 flex flex-row items-center justify-around space-x-4 mt-8'}>
                             <div className={'flex flex-col items-center justify-center w-1/3'}>
-                                <img src={p11} alt={'carbon fibre treadplate'}/>
-                                <span className={'text-white text-sm mt-2'}>Carbon Fibre</span>
+                                <img className={'slidechange carbon'} src={p11} alt={'carbon fibre treadplate'}/>
+                                <span className={'slidechange carbon text-white text-sm mt-2'}>Carbon Fibre</span>
                             </div>
                             <div className={'flex flex-col items-center justify-center w-1/3'}>
-                                <img src={p12} alt={'anodised treadplate'}/>
-                                <span className={'text-white text-sm mt-2'}>Anodised</span>
+                                <img className={'slidechange anodised'} src={p12} alt={'anodised treadplate'}/>
+                                <span className={'slidechange anodised text-white text-sm mt-2'}>Anodised</span>
                             </div>
                             <div className={'flex flex-col items-center justify-center w-1/3'}>
-                                <img src={tp13} alt={'powder coated treadplate'}/>
-                                <span className={'text-white text-sm mt-2'}>Powder Coated</span>
+                                <img className={'slidechange powder'} src={tp13} alt={'powder coated treadplate'}/>
+                                <span className={'slidechange powder text-white text-sm mt-2'}>Powder Coated</span>
                             </div>
                         </div>
                     </div>
@@ -85,7 +104,7 @@ export const ControlledCarousel = () => {
                             Full set £1150
                         </p>
                     </div>
-                    <div className={'w-full md:w-2/3 h-full justify-center items-center md:ml-14 z-10 flex flex-col'}>
+                    <div className={'w-full md:w-2/3 h-full pb-44 px-44 justify-center items-center md:ml-14 z-10 flex flex-col'}>
                         <img src={p11} alt={'carbon fibre treadplate'}/>
                     </div>
                 </div>
@@ -112,7 +131,7 @@ export const ControlledCarousel = () => {
                             Full set £900
                         </p>
                     </div>
-                    <div className={'w-full md:w-2/3 h-102 justify-center items-center md:ml-14 z-10 flex flex-col'}>
+                    <div className={'w-full md:w-2/3 h-50vh justify-center items-center md:ml-14 z-10 flex flex-col'}>
                         <div className={'w-full h-full flex flex-row items-center justify-around mt-8'}>
                             <div className={'flex flex-col items-center justify-center self-start w-1/3'}>
                                 <img src={p11} alt={'red treadplate'}/>
@@ -135,7 +154,7 @@ export const ControlledCarousel = () => {
                 <div className={'page-4 flex flex-col md:flex-row w-full h-full p-14 z-10 opacity-100'}>
                     <div className={'w-full md:w-1/3 h-full justify-center items-center text-left md:text-left text-md lg:text-lg font-semibold text-white z-10'}>
                         <h3 className={'underline pb-4'}>
-                            Carbon fibre tread plates
+                            Powder coated tread plates
                         </h3>
                         <p>
                             Powder coating provides a very hard layer to the surface of the base aluminium. These are our lowest cost but hardest wearing tread plate.
@@ -155,7 +174,7 @@ export const ControlledCarousel = () => {
                             Full set £800
                         </p>
                     </div>
-                    <div className={'w-full md:w-2/3 h-102 justify-center items-center md:ml-14 z-10 flex flex-col'}>
+                    <div className={'w-full md:w-2/3 h-50vh justify-center items-center md:ml-14 z-10 flex flex-col'}>
                         <div className={'w-full h-full flex flex-row items-center justify-around mt-8'}>
                             <div className={'flex flex-col items-center justify-center self-start w-1/3'}>
                                 <img src={tp41} alt={'black treadplate'}/>
