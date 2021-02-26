@@ -23,7 +23,6 @@ export const ControlledCarousel = () => {
     const a = () => {
         $(document).on('click', (e) => {
             let classes = e.target.classList;
-            console.log(e.target.classList)
             if (classes.contains('slidechange')) {
                 if (classes.contains('carbon')) {
                     handleSelect(1);
